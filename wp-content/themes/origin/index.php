@@ -2,29 +2,13 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-	<title>Document</title>
-	<link rel="stylesheet" href="/wp-content/themes/origin/reset.css"/>
-	<link rel="stylesheet" href="/wp-content/themes/origin/style.css"/>
-
+	<meta name="viewport" content="width=device-width">
+	<title>WEB SKILL UP!</title>
 	<?php wp_head(); ?>
+	<link href="wp-content/themes/origin/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="wp-content/themes/origin/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="header">
-			<div class="logo">WEB SKILL UP!</div>
-				<div class="mail"><a href="#">contact</a></div>
-					<nav class="globnav">
-						<div id="toggle"><a href="#">menu</a></div>
-					<ul id="menu" class="">
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">STUDY MEETING</a></li>
-						<li><a href="#">DAILY LEARNING</a></li>
-						<li><a href="#">RECOMMEND</a></li>
-						<li><a href="#">PRODUCTION</a></li>
-					</ul>
-				</nav>
-		</div>
 	<?php get_header(); ?>
 
 	<?php $query = array("post_type" => "post"); ?>
@@ -38,7 +22,9 @@
 
 	<?php get_sidebar(); ?>
 	<?php get_footer(); ?>
+
+	<script src="wp-content/themes/origin/js/jquery-3.1.0.min.js"></script>
+	<script src="wp-content/themes/origin/js/default.js"></script>
 	<?php wp_footer(); ?>
-	</div>
 </body>
 </html>
