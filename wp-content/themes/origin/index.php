@@ -11,6 +11,7 @@
 <body>
 	<?php get_header(); ?>
 
+<div class="contents">
 	<?php $query = array("post_type" => "post"); ?>
   <?php $loop = new WP_Query( $query ); ?>
   <?php if ($loop->have_posts()): ?>
@@ -18,7 +19,20 @@
   	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	<?php endwhile; ?>
   <?php endif; ?>
+	<div class="cover">
+		<ul>
+			<li class="card"><p><img src="wp-content/themes/origin/img/card.png" alt="" /></p><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+			<li class="card"><img src="wp-content/themes/origin/img/card.png" alt="" /><p>description</p></li>
+		</ul>
 
+	</div>
+</div>
 
 	<?php get_sidebar(); ?>
 	<?php get_footer(); ?>
